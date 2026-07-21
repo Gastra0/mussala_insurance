@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Localized reference site for the UNIQA x Mussala additional medical insurance coverage."
+    />
+    <title>UNIQA × Mussala Medical Insurance</title>
+    <link rel="stylesheet" href="assets/styles.css?v=20260630-hero-limits" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="UNIQA x Mussala">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>UNIQA × Mussala</strong>
+          <small id="brandSubtitle">Додаткове медичне страхування</small>
+        </span>
+      </a>
+
+      <nav class="language-switcher" aria-label="Language">
+        <button type="button" data-lang="ua">UA</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="bg">BG</button>
+        <button type="button" data-lang="ru">RU</button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro-band" aria-labelledby="pageTitle">
+        <div class="intro-copy">
+          <p class="eyebrow" id="eyebrow">Ваше медичне покриття</p>
+          <h1 id="pageTitle">Додаткове медичне страхування</h1>
+          <p id="pageLead">
+            Усі пакети, ліміти та умови з наданої бази знань.
+          </p>
+
+          <div class="toolbar" aria-label="Content tools">
+            <div class="search-control" role="search">
+              <label id="searchLabel" for="searchInput">Пошук</label>
+              <div class="search-row">
+                <input id="searchInput" type="search" autocomplete="off" />
+                <button
+                  class="icon-button search-clear"
+                  id="clearSearchButton"
+                  type="button"
+                  aria-label="Очистити пошук"
+                  title="Очистити пошук"
+                  hidden
+                >
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-panel coverage-panel">
+          <div class="section-heading">
+            <p class="section-kicker" id="coverageKicker">Ключові ліміти</p>
+            <h2 id="coverageTitle">Покриття в одному погляді</h2>
+          </div>
+          <div class="coverage-grid" id="coverageCards"></div>
+          <div class="coverage-meta" id="coverageMeta"></div>
+        </div>
+      </section>
+
+      <section class="visual-dashboard" aria-labelledby="processTitle">
+        <div class="visual-stack">
+          <div class="visual-panel process-panel">
+            <div class="section-heading">
+              <p class="section-kicker" id="processKicker">Процес</p>
+              <h2 id="processTitle">Від послуги до відшкодування</h2>
+            </div>
+            <div class="process-steps" id="processSteps"></div>
+          </div>
+
+          <div class="visual-panel quick-panel" aria-labelledby="quickTitle">
+            <div class="section-heading">
+              <p class="section-kicker" id="quickKicker">Контакти</p>
+              <h2 id="quickTitle">Швидкі дії</h2>
+            </div>
+            <div class="quick-links" id="quickLinks"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="side-panel" aria-label="Section navigation">
+          <div class="panel-block">
+            <h2 id="navTitle">Розділи</h2>
+            <nav id="sectionNav"></nav>
+          </div>
+        </aside>
+
+        <article class="content-shell">
+          <div id="loadingState" class="loading">Loading...</div>
+          <div id="contentRoot" class="markdown" hidden></div>
+          <div id="emptyState" class="empty" hidden>No matching sections.</div>
+        </article>
+      </section>
+
+      <section class="audit-section audit" aria-labelledby="auditTitle">
+        <div class="section-heading">
+          <p class="section-kicker" id="auditKicker">Фінальна перевірка</p>
+          <h2 id="auditTitle">Звірка</h2>
+        </div>
+        <p id="auditSummary">Перевірка ключових сум, термінів і контактів.</p>
+        <details class="audit-details">
+          <summary id="auditDetailsSummary">Показати перевірені дані</summary>
+          <ul id="auditList"></ul>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span id="footerText">Джерело: наданий Markdown-файл.</span>
+    </footer>
+
+    <script src="assets/app.js?v=20260630-hero-limits" type="module"></script>
+  </body>
+</html>
